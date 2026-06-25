@@ -12,7 +12,7 @@ export function useFiling() {
   const [currentFolder, setCurrentFolder] = useState<string | null>(null)
 
   const fetch = useCallback(async () => {
-    if (!user) return
+    if (!user) { setLoading(false); return }
     setLoading(true)
     const [foldersRes, docsRes] = await Promise.all([
       supabase.from('folders').select('*').eq('user_id', user.id).order('name'),

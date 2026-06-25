@@ -10,7 +10,7 @@ export function useTasks() {
   const [loading, setLoading] = useState(true)
 
   const fetch = useCallback(async () => {
-    if (!user) return
+    if (!user) { setLoading(false); return }
     setLoading(true)
     const { data } = await supabase
       .from('tasks')

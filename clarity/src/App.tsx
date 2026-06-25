@@ -19,12 +19,14 @@ const PAGE_MAP: Record<string, React.ComponentType> = {
   filing: FilingPage,
 }
 
+const DEMO_MODE = !import.meta.env.VITE_SUPABASE_URL || import.meta.env.VITE_SUPABASE_URL === 'https://placeholder.supabase.co'
+
 export default function App() {
   const { user, loading } = useAuth()
   const { activeTab } = useAppStore()
   useTheme()
 
-  if (loading) {
+  if (loading && !DEMO_MODE) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950">
         <div className="flex flex-col items-center gap-3">
@@ -37,7 +39,7 @@ export default function App() {
     )
   }
 
-  if (!user) {
+  if (!user && !DEMO_MODE) {
     return <AuthPage />
   }
 

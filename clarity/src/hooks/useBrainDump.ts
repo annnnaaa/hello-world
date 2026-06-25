@@ -21,7 +21,7 @@ export function useBrainDump() {
   }, [user])
 
   useEffect(() => {
-    if (!user) return
+    if (!user) { setLoading(false); return }
     setLoading(true)
     fetchUnsorted().then(() => setLoading(false))
   }, [user, fetchUnsorted])

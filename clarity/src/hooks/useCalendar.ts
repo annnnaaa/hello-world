@@ -11,7 +11,7 @@ export function useCalendar() {
   const [loading, setLoading] = useState(true)
 
   const fetch = useCallback(async () => {
-    if (!user) return
+    if (!user) { setLoading(false); return }
     setLoading(true)
     const [eventsRes, birthdaysRes] = await Promise.all([
       supabase.from('calendar_events').select('*').eq('user_id', user.id).order('start_date'),
