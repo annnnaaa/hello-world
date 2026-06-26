@@ -9,11 +9,8 @@ import {
   addMonths,
   subMonths,
   format,
-  isSameDay,
   isSameMonth,
   isToday,
-  getMonth,
-  getDate,
 } from 'date-fns'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useAuthStore } from '@/stores/authStore'

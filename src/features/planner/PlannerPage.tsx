@@ -23,7 +23,7 @@ export function PlannerPage() {
     <>
       <TopBar
         title="Planner"
-        right={
+        rightAction={
           <div className="flex items-center gap-2">
             <Button size="sm" variant="ghost" onClick={handleToday}>
               Today

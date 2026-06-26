@@ -1,5 +1,5 @@
 import { File, Image, FileText, Film, Music } from 'lucide-react'
-import { cn, truncate } from '@/lib/utils'
+import { cn } from '@/lib/utils'
 import type { FileRecord } from '@/types'
 
 interface FileCardProps {

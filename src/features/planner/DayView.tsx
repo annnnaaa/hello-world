@@ -16,10 +16,10 @@ import { getEventsInRange } from '@/services/events'
 import { getTasks } from '@/services/tasks'
 import { getBirthdays } from '@/services/birthdays'
 import { eventKeys, taskKeys, birthdayKeys } from '@/lib/queryKeys'
-import { cn, formatDate } from '@/lib/utils'
+import { cn } from '@/lib/utils'
 import { TaskCard } from '@/components/shared/TaskCard'
 import { BirthdayBadge } from './BirthdayBadge'
-import type { CalendarEvent, Birthday } from '@/types'
+import type { CalendarEvent } from '@/types'
 
 const START_HOUR = 6
 const END_HOUR = 23
@@ -121,7 +121,6 @@ export function DayView() {
 
     for (const event of sorted) {
       const pos = getEventPosition(event)
-      const eventEnd = pos.top + pos.height
 
       // Remove events that end before this one starts
       while (active.length > 0 && active[0].top + active[0].height <= pos.top) {

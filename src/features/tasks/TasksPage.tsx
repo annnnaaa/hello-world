@@ -97,7 +97,7 @@ export function TasksPage() {
     <>
       <TopBar
         title="Tasks"
-        right={
+        rightAction={
           <Button size="sm" onClick={handleOpenNew}>
             <Plus className="h-4 w-4" />
             Add

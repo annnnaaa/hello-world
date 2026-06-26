@@ -5,7 +5,6 @@ import { useUiStore } from '@/stores/uiStore'
 
 export function FolderBreadcrumb() {
   const folderStack = useUiStore((s) => s.folderStack)
-  const navigateFolder = useUiStore((s) => s.navigateFolder)
   const scrollRef = useRef<HTMLDivElement>(null)
 
   // Navigate to root
