@@ -76,7 +76,7 @@ export function InboxPage() {
     <>
       <TopBar
         title="Inbox"
-        right={
+        rightAction={
           thoughts.length > 0 ? (
             <Badge>{thoughts.length}</Badge>
           ) : undefined

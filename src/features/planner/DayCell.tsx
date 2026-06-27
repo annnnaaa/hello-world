@@ -1,4 +1,3 @@
-import { isToday as checkIsToday } from 'date-fns'
 import { cn } from '@/lib/utils'
 import type { CalendarEvent, Task, Birthday } from '@/types'
 import { TaskDotIndicator } from './TaskDotIndicator'
@@ -54,7 +53,7 @@ export function DayCell({
       </span>
 
       <div className="flex items-center gap-0.5 min-h-[8px]">
-        {eventDots.map((event, i) => (
+        {eventDots.map((event) => (
           <span
             key={event.id}
             className="h-[6px] w-[6px] rounded-full"

@@ -1,5 +1,4 @@
 import { useTaskFilterStore } from '@/stores/taskFilterStore'
-import { EnergySelector } from '@/components/shared/EnergySelector'
 import { BatchTypeSelector } from '@/components/shared/BatchTypeSelector'
 import { cn } from '@/lib/utils'
 import type { TaskEnergy } from '@/types'

@@ -1,12 +1,5 @@
-import { useState } from 'react'
-import { Plus, CheckSquare, Calendar, StickyNote } from 'lucide-react'
+import { CheckSquare, Calendar, StickyNote } from 'lucide-react'
 import { cn } from '@/lib/utils'
-
-interface QuickActionsRowProps {
-  onAddTask?: () => void
-  onAddEvent?: () => void
-  onAddNote?: () => void
-}
 
 const actions = [
   { key: 'task', icon: CheckSquare, label: 'Task', color: 'bg-accent-100 dark:bg-accent-900/30 text-accent-600 dark:text-accent-400' },

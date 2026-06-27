@@ -24,6 +24,7 @@ export interface Database {
           theme?: string
           updated_at?: string
         }
+        Relationships: []
       }
       thoughts: {
         Row: {
@@ -51,6 +52,7 @@ export interface Database {
           converted_to_id?: string | null
           updated_at?: string
         }
+        Relationships: []
       }
       tasks: {
         Row: {
@@ -92,6 +94,7 @@ export interface Database {
           sort_order?: number
           updated_at?: string
         }
+        Relationships: []
       }
       events: {
         Row: {
@@ -128,6 +131,7 @@ export interface Database {
           color?: string | null
           updated_at?: string
         }
+        Relationships: []
       }
       birthdays: {
         Row: {
@@ -150,6 +154,7 @@ export interface Database {
           birth_date?: string
           notes?: string | null
         }
+        Relationships: []
       }
       folders: {
         Row: {
@@ -180,6 +185,7 @@ export interface Database {
           sort_order?: number
           updated_at?: string
         }
+        Relationships: []
       }
       notes: {
         Row: {
@@ -210,6 +216,7 @@ export interface Database {
           pinned?: boolean
           updated_at?: string
         }
+        Relationships: []
       }
       files: {
         Row: {
@@ -245,6 +252,7 @@ export interface Database {
           tags?: string[]
           description?: string | null
         }
+        Relationships: []
       }
     }
     Views: Record<string, never>
