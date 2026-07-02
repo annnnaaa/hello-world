@@ -19,6 +19,80 @@
     --color-muted: 148 163 184;
   }
 
+  /* Named themes — applied as data-theme="..." on <html> */
+  [data-theme="cheerful"] {
+    --color-bg: 255 247 237;
+    --color-surface: 255 255 255;
+    --color-surface-elevated: 255 237 213;
+    --color-border: 254 215 170;
+    --color-muted: 180 83 9;
+    --theme-accent-h: 25;
+    --theme-accent-s: 95%;
+    --theme-accent-l: 53%;
+  }
+  [data-theme="calming"] {
+    --color-bg: 240 249 255;
+    --color-surface: 255 255 255;
+    --color-surface-elevated: 224 242 254;
+    --color-border: 186 230 253;
+    --color-muted: 2 132 199;
+    --theme-accent-h: 199;
+    --theme-accent-s: 89%;
+    --theme-accent-l: 48%;
+  }
+  [data-theme="bright"] {
+    --color-bg: 255 255 255;
+    --color-surface: 250 245 255;
+    --color-surface-elevated: 243 232 255;
+    --color-border: 216 180 254;
+    --color-muted: 126 34 206;
+    --theme-accent-h: 270;
+    --theme-accent-s: 91%;
+    --theme-accent-l: 60%;
+  }
+  [data-theme="pastel"] {
+    --color-bg: 253 242 248;
+    --color-surface: 255 255 255;
+    --color-surface-elevated: 252 231 243;
+    --color-border: 249 168 212;
+    --color-muted: 190 24 93;
+    --theme-accent-h: 328;
+    --theme-accent-s: 85%;
+    --theme-accent-l: 65%;
+  }
+  [data-theme="neon"] {
+    color-scheme: dark;
+    --color-bg: 3 7 18;
+    --color-surface: 15 23 42;
+    --color-surface-elevated: 30 41 59;
+    --color-border: 34 197 94;
+    --color-muted: 74 222 128;
+    --theme-accent-h: 142;
+    --theme-accent-s: 71%;
+    --theme-accent-l: 45%;
+  }
+  [data-theme="minimal-light"] {
+    --color-bg: 250 250 250;
+    --color-surface: 255 255 255;
+    --color-surface-elevated: 245 245 245;
+    --color-border: 229 229 229;
+    --color-muted: 115 115 115;
+    --theme-accent-h: 0;
+    --theme-accent-s: 0%;
+    --theme-accent-l: 20%;
+  }
+  [data-theme="minimal-dark"] {
+    color-scheme: dark;
+    --color-bg: 10 10 10;
+    --color-surface: 23 23 23;
+    --color-surface-elevated: 38 38 38;
+    --color-border: 64 64 64;
+    --color-muted: 163 163 163;
+    --theme-accent-h: 0;
+    --theme-accent-s: 0%;
+    --theme-accent-l: 80%;
+  }
+
   html {
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
