@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { SettingsDropdown } from './SettingsDropdown'
 
 interface TopBarProps {
   title: string
@@ -40,7 +41,10 @@ export function TopBar({ title, showBack = false, rightAction }: TopBarProps) {
           {title}
         </h1>
 
-        {rightAction && <div className="flex items-center">{rightAction}</div>}
+        <div className="flex items-center gap-1">
+          {rightAction && <div className="flex items-center">{rightAction}</div>}
+          <SettingsDropdown />
+        </div>
       </div>
     </header>
   )
