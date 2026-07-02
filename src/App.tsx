@@ -7,6 +7,7 @@ import { InboxPage } from '@/features/inbox/InboxPage'
 import { TasksPage } from '@/features/tasks/TasksPage'
 import { PlannerPage } from '@/features/planner/PlannerPage'
 import { FilingPage } from '@/features/filing/FilingPage'
+import { SettingsPage } from '@/features/settings/SettingsPage'
 import { NotFoundPage } from '@/pages/NotFoundPage'
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
                   <Route path="/tasks" element={<TasksPage />} />
                   <Route path="/planner" element={<PlannerPage />} />
                   <Route path="/filing" element={<FilingPage />} />
+                  <Route path="/settings" element={<SettingsPage />} />
                   <Route path="*" element={<NotFoundPage />} />
                 </Routes>
               </AppShell>
